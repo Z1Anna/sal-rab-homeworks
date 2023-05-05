@@ -1,8 +1,6 @@
 function renderCartItem(item) {
     const product = item;
-    item = {id: 1, title: 'Чебурек', count: 1, price: '120.00'};
-    item = {id: 2, title: 'Пицца', count: 1, price: '500.00'};
- 
+    
 
     // Задание №3.1. Формирование строки корзины
 
@@ -20,8 +18,7 @@ function renderCartItem(item) {
     
     // 1. Создайте переменную itemCountText, равную пустой строке
     let itemCountText;
-    itemCountText = {};
-
+    
     // 2. Присвойте переменной itemCountText результат склеивания itemCountText и количества
     // 3. Присвойте переменной itemCountText результат склеивания itemCountText и ` × `
     // 4. Присвойте переменной itemCountText результат склеивания itemCountText и цены
