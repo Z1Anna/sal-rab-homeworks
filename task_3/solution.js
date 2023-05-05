@@ -1,5 +1,8 @@
 function renderCartItem(item) {
     const product = item;
+    item = {id: 1, title: 'Чебурек', count: 1, price: '120.00'};
+    item = {id: 2, title: 'Пицца', count: 1, price: '500.00'};
+ 
 
     // Задание №3.1. Формирование строки корзины
 
@@ -14,14 +17,26 @@ function renderCartItem(item) {
     // количество × цена ₽ = стоимость ₽
     // например,
     // 5 × 500.00 ₽ = 2500 ₽
+    
     // 1. Создайте переменную itemCountText, равную пустой строке
+    let itemCountText;
+    itemCountText = {};
+
     // 2. Присвойте переменной itemCountText результат склеивания itemCountText и количества
     // 3. Присвойте переменной itemCountText результат склеивания itemCountText и ` × `
     // 4. Присвойте переменной itemCountText результат склеивания itemCountText и цены
     // 5. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽ = `
+    itemCountText = product.count + ' × ' + product.price + ' ₽ = ';
+
     // 6. Создайте переменную sum и присвойте ей значение произведения количества и цены
+    let sum;
+    sum = product.count * product.price;
+
     // 7. Присвойте переменной itemCountText результат склеивания itemCountText и sum
+    itemCountText = itemCountText + sum;
+
     // 8. Присвойте переменной itemCountText результат склеивания itemCountText и ` ₽`
+    itemCountText = itemCountText + ' ₽';
 
     // Конец решения задания №3.1.
 
